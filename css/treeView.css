@@ -1,0 +1,79 @@
+#tree-view {
+  pointer-events: all;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#tree-view ul {
+  list-style: none;
+  padding-left: 1.75em;
+  pointer-events: none;
+}
+
+#tree-view ul li {
+  position: relative; 
+  width: auto;
+  pointer-events: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+}
+
+#tree-view ul li a {
+  background-color: #eee;
+  border-radius: 50%;
+  color: #000;
+  display: inline-block;
+  height: 1.5em;
+  left: -1.5em;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  width: 1.5em;
+  pointer-events: all;
+}
+
+#tree-view ul li a.plus {
+  background-color: rgb(88, 177, 88);
+  pointer-events: all;
+}
+
+#tree-view ul li a.minus {
+  background-color: #be6161;
+  pointer-events: all;
+}
+
+#tree-view ul li a:active {
+  top: 1px;
+  pointer-events: all;
+}
+
+#tree-view ul li span:hover {
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.123);
+  padding-left: 2px;
+  pointer-events: all;
+}
+
+#tree-view ul li span {
+  display: inline-block;
+  width: calc(100% - 50px);
+  padding-left: 2px;
+  pointer-events: all;
+  height: 23px;
+}
+
+#tree-view .highlighted-node {
+  /* Appearance of node highlighted with TreeViewPlugin#showNode() */
+  border: black solid 1px;
+  background: yellow;
+  color: black;
+  padding-left: 1px;
+  padding-right: 5px;
+  pointer-events: all;
+}

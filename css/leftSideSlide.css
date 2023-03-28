@@ -1,0 +1,18 @@
+.left-slide-button {
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+
+#left-slide-check-button:checked ~ .left-slide {
+  left: 0;
+}
+
+#left-slide-check-button:checked + .left-slide-button {
+  left: 370px;
+}
+
+.left-slide {
+  left: -370px;
+  width: 350px;
+}

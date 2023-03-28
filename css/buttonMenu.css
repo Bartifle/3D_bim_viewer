@@ -1,0 +1,23 @@
+.buttonsWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+}
+
+.buttonsWrapper ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsWrapper ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu-button {
+  font-size: 30px;
+  padding: 15px;
+}

@@ -1,0 +1,380 @@
+[
+  {
+      "id": "1lE1fMkmUycDiYKlZNaxNf",
+      "name": "Pset_BeamCommon",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "IsExternal",
+              "type": 2,
+              "value": "F",
+              "valueType": 3
+          },
+          {
+              "name": "LoadBearing",
+              "type": 2,
+              "value": "T",
+              "valueType": 3
+          },
+          {
+              "name": "Reference",
+              "type": 2,
+              "value": "40x100",
+              "valueType": 1
+          },
+          {
+              "name": "Span",
+              "type": 2,
+              "value": 4.580000000000001,
+              "valueType": 4
+          },
+          {
+              "name": "Slope",
+              "type": 2,
+              "value": 29.119342069382977,
+              "valueType": 4
+          }
+      ]
+  },
+  {
+      "id": "0l9l8QWdao3f6k6H_CCcPC",
+      "name": "Pset_QuantityTakeOff",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Reference",
+              "type": 2,
+              "value": "40x100",
+              "valueType": 1
+          }
+      ]
+  },
+  {
+      "id": "1Q0G3pbjwT5QVHmqTojtGl",
+      "name": "Pset_ReinforcementBarPitchOfBeam",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Reference",
+              "type": 2,
+              "value": "40x100",
+              "valueType": 1
+          }
+      ]
+  },
+  {
+      "id": "3wzA5zvLuWXGMHw$pphoxD",
+      "name": "Position g\\X\\E9om\\X\\E9trique",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Etat de la jonction",
+              "type": 2,
+              "value": "Deux jonctions activ\\X\\E9es",
+              "valueType": 1
+          },
+          {
+              "name": "Justification Y",
+              "type": 2,
+              "value": "Origine",
+              "valueType": 1
+          },
+          {
+              "name": "Justification YZ",
+              "type": 2,
+              "value": "Uniforme",
+              "valueType": 1
+          },
+          {
+              "name": "Justification Z",
+              "type": 2,
+              "value": "Haut",
+              "valueType": 1
+          },
+          {
+              "name": "Valeur de d\\X\\E9calage Y",
+              "type": 2,
+              "value": 0,
+              "valueType": 4
+          },
+          {
+              "name": "Valeur de d\\X\\E9calage Z",
+              "type": 2,
+              "value": 0,
+              "valueType": 4
+          },
+          {
+              "name": "Extension de d\\X\\E9part",
+              "type": 2,
+              "value": -0.04096049609426819,
+              "valueType": 4
+          },
+          {
+              "name": "Extension de fin",
+              "type": 2,
+              "value": 0.07945321701519453,
+              "valueType": 4
+          }
+      ]
+  },
+  {
+      "id": "1oMXUqBT70q2LClRyhMy1g",
+      "name": "Propri\\X\\E9t\\X\\E9s Green Building",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Accessibilit\\X\\E9",
+              "type": 2,
+              "value": "Travail en hauteur",
+              "valueType": 1
+          },
+          {
+              "name": "Analyse compl\\X\\E9mentaire",
+              "type": 2,
+              "value": "Si usage futur structurel, essai labo \\X\\E0 r\\X\\E9aliser pour d\\X\\E9terminer les caract\\X\\E9ristiques m\\X\\E9caniques des \\X\\E9l\\X\\E9ments bois. Tests de d\\X\\E9termination de l''essence et la toxicit\\X\\E9 \\X\\E0 r\\X\\E9aliser. V\\X\\E9rification de la pr\\X\\E9sence d''amiante d\\X\\FBe \\X\\E0 la couverture \\X\\E0 r\\X\\E9aliser pour confirmer ou non le r\\X\\E9emploi",
+              "valueType": 1
+          },
+          {
+              "name": "Commentaires et points de vigilance",
+              "type": 2,
+              "value": "V\\X\\E9rifier la compatibilit\\X\\E9 entre les caract\\X\\E9ristiques m\\X\\E9caniques et intrins\\X\\E8ques des \\X\\E9l\\X\\E9ments bois et leur usage futur. Les dimensions et quantit\\X\\E9s pourront \\X\\EAtre calcul\\X\\E9es \\X\\E0 partir du scan de la structure",
+              "valueType": 1
+          },
+          {
+              "name": "Conditionnement",
+              "type": 2,
+              "value": "Entreposer sur palettes ou dans bennes ferm\\X\\E9es",
+              "valueType": 1
+          },
+          {
+              "name": "D\\X\\E9pose",
+              "type": 2,
+              "value": "D\\X\\E9pose pr\\X\\E9cautionneuse et pr\\X\\E9servante",
+              "valueType": 1
+          },
+          {
+              "name": "Entreprise PEMD",
+              "type": 2,
+              "value": "BOMA",
+              "valueType": 1
+          },
+          {
+              "name": "Etat de conservation",
+              "type": 2,
+              "value": "Bon",
+              "valueType": 1
+          },
+          {
+              "name": "Famille",
+              "type": 2,
+              "value": "Structure",
+              "valueType": 1
+          },
+          {
+              "name": "Gestion PEMD",
+              "type": 2,
+              "value": "R\\X\\E9emploi usage d\\X\\E9tourn\\X\\E9, recyclage en fili\\X\\E8re d\\X\\E9di\\X\\E9e : bois",
+              "valueType": 1
+          },
+          {
+              "name": "Mode d''assemblage",
+              "type": 2,
+              "value": "M\\X\\E9canique",
+              "valueType": 1
+          },
+          {
+              "name": "PEMD",
+              "type": 2,
+              "value": "Mat\\X\\E9riau",
+              "valueType": 1
+          },
+          {
+              "name": "Potentiel global de valorisation - Recyclage",
+              "type": 2,
+              "value": "4/5",
+              "valueType": 1
+          },
+          {
+              "name": "Potentiel global de valorisation - R\\X\\E9emploi",
+              "type": 2,
+              "value": "5/5",
+              "valueType": 1
+          },
+          {
+              "name": "Pr\\X\\E9paration au r\\X\\E9emploi",
+              "type": 2,
+              "value": "D\\X\\E9mant\\X\\E8lement sur place",
+              "valueType": 1
+          },
+          {
+              "name": "Stockage",
+              "type": 2,
+              "value": "Hors eau, hors sol",
+              "valueType": 1
+          },
+          {
+              "name": "Type",
+              "type": 2,
+              "value": "PEMD constitutif",
+              "valueType": 1
+          }
+      ]
+  },
+  {
+      "id": "3SCmLpq$xnGWig5dpiIsgA",
+      "name": "Contraintes",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Rotation de la section",
+              "type": 2,
+              "value": 0,
+              "valueType": 4
+          },
+          {
+              "name": "Niveau de r\\X\\E9f\\X\\E9rence",
+              "type": 2,
+              "value": "R+3",
+              "valueType": 1
+          },
+          {
+              "name": "D\\X\\E9calage du niveau d''arriv\\X\\E9e",
+              "type": 2,
+              "value": 5.475766880142048,
+              "valueType": 4
+          },
+          {
+              "name": "D\\X\\E9calage du niveau de d\\X\\E9part",
+              "type": 2,
+              "value": 3.2470000000000017,
+              "valueType": 4
+          },
+          {
+              "name": "El\\X\\E9vation du niveau de r\\X\\E9f\\X\\E9rence",
+              "type": 2,
+              "value": 9.043,
+              "valueType": 4
+          }
+      ]
+  },
+  {
+      "id": "3tfKMAA75Rc9qZU6tbBczs",
+      "name": "Phase de construction",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Phase de cr\\X\\E9ation",
+              "type": 2,
+              "value": "A d\\X\\E9molir",
+              "valueType": 1
+          }
+      ]
+  },
+  {
+      "id": "06uwroySLcXGP9iLjEIew3",
+      "name": "Structure",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Emplacement du symbole filaire",
+              "type": 2,
+              "value": "Centre de la g\\X\\E9om\\X\\E9trie",
+              "valueType": 1
+          },
+          {
+              "name": "Utilisation structurelle",
+              "type": 2,
+              "value": "Autre",
+              "valueType": 1
+          },
+          {
+              "name": "Longueur de coupe",
+              "type": 2,
+              "value": 4.618492720920928,
+              "valueType": 4
+          }
+      ]
+  },
+  {
+      "id": "0dhBkrSWouMFc0GTwvgjMd",
+      "name": "Mat\\X\\E9riaux et finitions",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Mat\\X\\E9riau structurel",
+              "type": 2,
+              "value": "R\\X\\E9sineux, bois de construction",
+              "valueType": 1
+          }
+      ]
+  },
+  {
+      "id": "2XXOGii$6NR$v7TD2u99Wg",
+      "name": "Cotes",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Longueur",
+              "type": 2,
+              "value": 4.580000000000001,
+              "valueType": 4
+          },
+          {
+              "name": "Volume",
+              "type": 2,
+              "value": 0.01847397088368526,
+              "valueType": 4
+          }
+      ]
+  },
+  {
+      "id": "2_bsKgJy3BeOk2SYe6PZcW",
+      "name": "Donn\\X\\E9es d''identification",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "A une association",
+              "type": 2,
+              "value": "F",
+              "valueType": 3
+          }
+      ]
+  },
+  {
+      "id": "3ugqvKPoVmSNeh1VGwkHRL",
+      "name": "Autre",
+      "type": "Default",
+      "properties": [
+          {
+              "name": "Cat\\X\\E9gorie",
+              "type": 2,
+              "value": "Ossature",
+              "valueType": 1
+          },
+          {
+              "name": "Famille",
+              "type": 2,
+              "value": "M_Bois d''oeuvre",
+              "valueType": 1
+          },
+          {
+              "name": "Famille et type",
+              "type": 2,
+              "value": "M_Bois d''oeuvre: 40x100",
+              "valueType": 1
+          },
+          {
+              "name": "ID du type",
+              "type": 2,
+              "value": "268058",
+              "valueType": 1
+          },
+          {
+              "name": "Type",
+              "type": 2,
+              "value": "40x100",
+              "valueType": 1
+          }
+      ]
+  }
+]

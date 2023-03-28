@@ -1,0 +1,12 @@
+.slide {
+  height: 100%;
+  pointer-events: all;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.904);
+  transition: all 300ms ease-in-out;
+  padding: 0px 10px 0px 10px;
+  color: rgb(219, 219, 219);
+  z-index: 200000;
+}

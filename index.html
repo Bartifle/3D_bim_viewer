@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BIM Viewer</title>
+    <link href="css/pageStyle.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
+    <link href="css/rightSideSlide.css" rel="stylesheet" />
+    <link href="css/leftSideSlide.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <link href="css/treeView.css" rel="stylesheet" />
+    <link href="css/buttonMenu.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="right-slide-check-button" class="check-button not-displayed" />
+    <label for="right-slide-check-button" class="right-slide-button button-to-check slide-button button">
+      <i class="fa fa-question-circle icon"></i>
+    </label>
+
+    <input type="checkbox" id="left-slide-check-button" class="check-button not-displayed"/>
+    <label for="left-slide-check-button" class="left-slide-button button-to-check slide-button button">
+      <i class="fa fa-sitemap icon"></i>
+    </label>
+
+    <canvas id="myCanvas"></canvas>
+    <canvas id="myNavCubeCanvas"></canvas>
+    <div class="left-slide slide">
+      <div id="tree-view"></div>
+    </div>
+    
+    <!-- <div class="buttonsWrapper">
+      <ul>
+        <li><button type="button" id=""><i class="fa fa-ruler"></i></button></li>
+        <li><button type="button" id=""><i class="fa fa-ruler-combined"></i></button></li>
+        <li><button type="button" id=""><i class="fa-solid fa-wrench"></i></button></li>
+        <li><button type="button" id=""><i class="fa-solid fa-wrench"></i></button></li>
+      </ul>
+    </div> -->
+
+    <div class="buttonsWrapper">
+      <ul>
+        <li>
+          <input type="checkbox" id="ruler-check-button" class="check-button not-displayed"></input>
+          <label for="ruler-check-button" class="menu-button button-to-check button"><i class="fa fa-ruler"></i></label>
+        </li>
+        <li>
+          <input type="checkbox" id="angle-check-button" class="check-button not-displayed"></input>
+          <label for="angle-check-button" class="menu-button button-to-check button"><i class="fa fa-ruler-combined"></i></label>
+        </li>
+        <li>
+          <input type="checkbox" id="wrench1-check-button" class="check-button not-displayed"></input>
+          <label for="wrench1-check-button" class="menu-button button-to-check button"><i class="fa-solid fa-wrench"></i></label>
+        </li>
+        <li>
+          <input type="checkbox" id="wrench2-check-button" class="check-button not-displayed"></input>
+          <label for="wrench2-check-button" class="menu-button button-to-check button"><i class="fa-solid fa-wrench"></i></label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="right-slide slide">
+      <h3>Stats</h3>
+      <ul>
+        <li>
+          <div id="time">Loading JavaScript modules...</div>
+        </li>
+      </ul>
+      <h3>Properties</h3>
+      <div id="properties"><div>Rien a afficher</div></div>
+    </div>
+  </body>
+
+  <script type="module" src="./src/main.js"></script>
+</html>
