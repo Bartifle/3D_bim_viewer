@@ -1,17 +1,29 @@
-import { propertiesParser } from "./services/propertiesParser.js";
-import { modelLoadingTime } from "./services/modelLoadingTime.js"
+//* CONSTRUCTORS
 
-import { distanceMeasurementConstructor } from "./constructors/distanceMeasurementConstructor.js";
-import { distanceMeasurementsContextMenuConstructor } from "./constructors/distanceMeasurementContextMenuConstructor.js"
-import { angleMeasurementConstructor } from "./constructors/angleMeasurementConstructor.js"
-import { angleMeasurementContextMenuConstructor} from "./constructors/angleMeasurementContextMenuConstructor.js"
+// Main Constructors
+import { viewerConstructor } from "./constructors/mainConstructors/viewerConstructor.js";
+import { sceneModelConstructor } from "./constructors/mainConstructors/sceneModelConstructor.js";
 
-import { viewerConstructor } from "./constructors/viewerConstructor.js";
-import { navCubeConstructor } from "./constructors/navCubeConstructor.js";
-import { treeViewConstructor } from "./constructors/treeViewConstructor.js";
-import { objectContextMenuConstructor } from "./constructors/objectContextMenuConstructor.js";
+// Tools Constructors
+import { distanceMeasurementConstructor } from "./constructors/toolsConstructors/distanceMeasurementConstructor.js";
+import { angleMeasurementConstructor } from "./constructors/toolsConstructors/angleMeasurementConstructor.js"
+
+// ContextMenu Constructors
+import { objectContextMenuConstructor } from "./constructors/contextMenuConstructors/objectContextMenuConstructor.js";
+import { distanceMeasurementsContextMenuConstructor } from "./constructors/contextMenuConstructors/distanceMeasurementContextMenuConstructor.js"
+import { angleMeasurementContextMenuConstructor} from "./constructors/contextMenuConstructors/angleMeasurementContextMenuConstructor.js"
+
+// Other plugins Constructors
+import { navCubeConstructor } from "./constructors/otherPluginsConstructors/navCubeConstructor.js";
+import { treeViewConstructor } from "./constructors/otherPluginsConstructors/treeViewConstructor.js";
+
+//* Controllers
+
 import { mouseControls } from "./controllers/mouseControls.js"
-import { sceneModelConstructor } from "./constructors/sceneModelConstructor.js";
+
+//* Services
+import { propertiesParser } from "./services/propertiesParser.js";
+import { modelLoadingTime } from "./services/modelLoadingTime.js";
 
 const viewer = viewerConstructor();
 const treeView = treeViewConstructor(viewer);

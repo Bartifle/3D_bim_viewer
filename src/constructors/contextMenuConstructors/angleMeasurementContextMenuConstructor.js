@@ -6,6 +6,7 @@ export function angleMeasurementContextMenuConstructor() {
         {
           title: "Clear",
           doAction: function (context) {
+            console.log(context)
             context.measurement.destroy();
           },
         },

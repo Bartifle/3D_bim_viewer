@@ -7,6 +7,7 @@ export function distanceMeasurementsContextMenuConstructor() {
         {
           title: "Clear",
           doAction: function (context) {
+            console.log(context)
             context.distanceMeasurement.destroy();
           },
         },
