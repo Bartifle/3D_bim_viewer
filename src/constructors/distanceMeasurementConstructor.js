@@ -89,5 +89,14 @@ export function distanceMeasurementConstructor(viewer) {
     e.event.preventDefault();
   });
 
+  const rulerCheckbox = document.getElementById("ruler-check-button");
+  rulerCheckbox.addEventListener("change", function (e) {
+    if (e.target.checked) {
+      distanceMeasurements.control.activate();
+    } else {
+      distanceMeasurements.control.deactivate();
+    }
+  });
+
   return distanceMeasurements;
 }
