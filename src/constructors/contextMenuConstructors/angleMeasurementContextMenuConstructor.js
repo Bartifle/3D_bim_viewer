@@ -6,7 +6,6 @@ export function angleMeasurementContextMenuConstructor() {
         {
           title: "Clear",
           doAction: function (context) {
-            console.log(context)
             context.measurement.destroy();
           },
         },
@@ -21,6 +20,15 @@ export function angleMeasurementContextMenuConstructor() {
           doAction: function (context) {
             context.measurement.labelsVisible =
               !context.measurement.labelsVisible;
+          },
+        },
+      ],
+      [
+        {
+          title: "Reset",
+          doAction: function (context) {
+            console.log(context);
+            context.angleMeasurementsPlugin.control.reset();
           },
         },
       ],

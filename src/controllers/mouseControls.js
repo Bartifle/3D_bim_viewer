@@ -52,10 +52,12 @@ export function mouseControls(
   //* Distance measurement button click control
 
   // Behaviour when ruller button is pressed
-  const distanceMeasurementCheckbox =
-    document.getElementById("ruler-check-button");
+  const distanceMeasurementCheckbox = document.getElementById("ruler-check-button");
   distanceMeasurementCheckbox.addEventListener("change", function (e) {
     if (e.target.checked) {
+      document.getElementById("angle-check-button").checked = false;
+      angleMeasurement.control.deactivate();
+      console.log("angle "+angleMeasurement.control.active);
       distanceMeasurement.control.activate();
     } else {
       distanceMeasurement.control.deactivate();
@@ -65,17 +67,19 @@ export function mouseControls(
   //* Angle measurement button click control
 
   // Behaviour when angle button is pressed
-  const angleMeasurementCheckbox =
-    document.getElementById("angle-check-button");
-    angleMeasurementCheckbox.addEventListener("change", function (e) {
+  const angleMeasurementCheckbox = document.getElementById("angle-check-button");
+  angleMeasurementCheckbox.addEventListener("change", function (e) {
     if (e.target.checked) {
+      document.getElementById("ruler-check-button").checked = false;
+      distanceMeasurement.control.deactivate();
+      console.log("distance "+distanceMeasurement.control.active);
       angleMeasurement.control.activate();
     } else {
       angleMeasurement.control.deactivate();
     }
   });
 
-  //* Controls distance context menu 
+  //* Controls distance context menu
 
   // Behaviour when Context menu is shown
   distanceMeasurement.on("contextMenu", (e) => {
@@ -112,26 +116,25 @@ export function mouseControls(
 
   // Behaviour when Context menu is shown
   angleMeasurement.on("contextMenu", (e) => {
-    angleMeasurementContextMenu.context = { // Must set context before showing menu
-        viewer: viewer,
-        angleMeasurementsPlugin: angleMeasurement,
-        measurement: e.measurement
+    angleMeasurementContextMenu.context = {
+      // Must set context before showing menu
+      viewer: viewer,
+      angleMeasurementsPlugin: angleMeasurement,
+      measurement: e.measurement,
     };
     angleMeasurementContextMenu.show(e.event.clientX, e.event.clientY);
     e.event.preventDefault();
 
-  //* Controls the behaviour of the mouse when over or not over traced angles
+    //* Controls the behaviour of the mouse when over or not over traced angles
 
-  // Mouse over
-  angleMeasurement.on("mouseOver", (e) => {
-    e.measurement.setHighlighted(true);
+    // Mouse over
+    angleMeasurement.on("mouseOver", (e) => {
+      e.measurement.setHighlighted(true);
+    });
+
+    // Mouse leave
+    angleMeasurement.on("mouseLeave", (e) => {
+      e.measurement.setHighlighted(false);
+    });
   });
-
-  // Mouse leave
-  angleMeasurement.on("mouseLeave", (e) => {
-    e.measurement.setHighlighted(false);
-  });
-
-  
-});
 }
